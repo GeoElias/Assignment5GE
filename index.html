@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Oval Buttons</title>
+  <title>Bubble Inside Buttons</title>
   <style>
     body {
       margin: 0;
@@ -13,29 +13,46 @@
       background-color: #f0f0f0;
     }
 
-    .oval-button {
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 15px 30px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      border-radius: 50px;
-      cursor: pointer;
-      margin: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-      transition: 0.3s;
+    .button-container {
+      display: flex;
+      gap: 30px;
     }
 
-    .oval-button:hover {
-      background-color: #45a049;
+    .square-button {
+      width: 120px;
+      height: 120px;
+      background-color: #e0e0e0;
+      border: 2px solid #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .bubble {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 25px;
+      border-radius: 50px;
+      font-size: 16px;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .cancel-bubble {
+      background-color: #f44336;
     }
   </style>
 </head>
 <body>
-  <button class="oval-button">Oval Button 1</button>
-  <button class="oval-button">Oval Button 2</button>
+  <div class="button-container">
+    <div class="square-button">
+      <div class="bubble">OK</div>
+    </div>
+    <div class="square-button">
+      <div class="bubble cancel-bubble">Cancel</div>
+    </div>
+  </div>
 </body>
 </html>
+
