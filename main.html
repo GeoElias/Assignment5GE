@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3x3 Grid</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      border: 2px solid blue; /* outer border */
+    }
+
+    .cell {
+      border-right: 2px solid red;
+      border-bottom: 2px solid blue;
+    }
+
+    .grid .cell:nth-child(3n) {
+      border-right: none; /* remove right border on last column */
+    }
+
+    .grid .cell:nth-last-child(-n+3) {
+      border-bottom: none; /* remove bottom border on last row */
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+  </div>
+</body>
+</html>
