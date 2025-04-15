@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>3x3 Grid</title>
+  <title>Centered 3x3 Grid</title>
   <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 100px);
       grid-template-rows: repeat(3, 100px);
-      border: 2px solid blue; /* outer border */
+      border: 2px solid blue;
     }
 
     .cell {
@@ -17,11 +26,11 @@
     }
 
     .grid .cell:nth-child(3n) {
-      border-right: none; /* remove right border on last column */
+      border-right: none;
     }
 
     .grid .cell:nth-last-child(-n+3) {
-      border-bottom: none; /* remove bottom border on last row */
+      border-bottom: none;
     }
   </style>
 </head>
