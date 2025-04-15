@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication Table</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .table-box {
+      padding: 20px;
+      border: 2px solid #333;
+      background-color: white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 10px;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+    }
+
+    th {
+      background-color: #ddd;
+    }
+
+    .header-cell {
+      background-color: #ccc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="table-box">
+    <h2>Multiplication Table</h2>
+    <table>
+      <tr>
+        <th class="header-cell"></th>
+        <!-- X-axis headers -->
+        <!-- 1 to 9 -->
+        <!-- Use a loop or copy manually -->
+        <th class="header-cell">1</th>
+        <th class="header-cell">2</th>
+        <th class="header-cell">3</th>
+        <th class="header-cell">4</th>
+        <th class="header-cell">5</th>
+        <th class="header-cell">6</th>
+        <th class="header-cell">7</th>
+        <th class="header-cell">8</th>
+        <th class="header-cell">9</th>
+      </tr>
+      <!-- Y-axis and values -->
+      <!-- Each row: Y header + 9 products -->
+      <!-- We'll hardcode for simplicity -->
+      <tr><th class="header-cell">1</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
+      <tr><th class="header-cell">2</th><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td><td>14</td><td>16</td><td>18</td></tr>
+      <tr><th class="header-cell">3</th><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td><td>24</td><td>27</td></tr>
+      <tr><th class="header-cell">4</th><td>4</td><td>8</td><td>12</td><td>16</td><td>20</td><td>24</td><td>28</td><td>32</td><td>36</td></tr>
+      <tr><th class="header-cell">5</th><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td><td>35</td><td>40</td><td>45</td></tr>
+      <tr><th class="header-cell">6</th><td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td>36</td><td>42</td><td>48</td><td>54</td></tr>
+      <tr><th class="header-cell">7</th><td>7</td><td>14</td><td>21</td><td>28</td><td>35</td><td>42</td><td>49</td><td>56</td><td>63</td></tr>
+      <tr><th class="header-cell">8</th><td>8</td><td>16</td><td>24</td><td>32</td><td>40</td><td>48</td><td>56</td><td>64</td><td>72</td></tr>
+      <tr><th class="header-cell">9</th><td>9</td><td>18</td><td>27</td><td>36</td><td>45</td><td>54</td><td>63</td><td>72</td><td>81</td></tr>
+    </table>
+  </div>
+</body>
+</html>
